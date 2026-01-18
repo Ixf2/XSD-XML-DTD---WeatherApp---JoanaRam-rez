@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE weather_alert SYSTEM "information.dtd"> -->
+<weather_alert xmlns="https://www.w3schools.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="https://www.w3schools.com weather-schema.xsd">
+    <alerts_infos>
+        <alert_info>
+            <alert_id></alert_id>
+            <generate_at></generate_at>
+            <severity></severity>
+            <type></type>
+            <description></description>
+            <affected_areas>
+                <affected_area>
+                    <city>Las Palmas de G.C.</city>
+                    <lactitude cardinal-point="N">28.07</lactitude>
+                    <logintude cardinal-point="O">15.43</logintude>
+                </affected_area>
+            </affected_areas>
+        </alert_info>
+        <alert_info>
+            <alert_id></alert_id>
+            <generate_at></generate_at>
+            <severity></severity>
+            <type></type>
+            <description></description>
+            <affected_areas>
+                <affected_area>
+                    <city>Las Palmas de G.C.</city>
+                    <lactitude cardinal-point="N">28.07</lactitude>
+                    <logintude cardinal-point="O">15.43</logintude>
+                </affected_area>
+            </affected_areas>
+        </alert_info>
+    </alerts_infos>
+
+
+    <period>
+        <start></start>
+        <end></end>
+    </period>
+</weather_alert>
+
+<!-- xmlns="https://www.w3schools.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="https://www.w3schools.com weather-schema.xsd" -->

@@ -1,0 +1,54 @@
+<!-- ========== WEATHER OBSERVATION ========== -->
+<!ELEMENT weather_observation (locations)>
+<!ELEMENT locations (location+)>
+
+<!ELEMENT location (city, lactitude, logintude, observation)>
+<!ELEMENT observation (date, temperature, humidity, wind_speed, condition)>
+
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT temperature (#PCDATA)>
+<!ATTLIST temperature unit CDATA #REQUIRED>
+
+<!ELEMENT humidity (#PCDATA)>
+<!ELEMENT wind_speed (#PCDATA)>
+<!ATTLIST wind_speed unit CDATA #REQUIRED>
+
+<!ELEMENT condition (#PCDATA)>
+
+<!-- ========== WEATHER ALERT ========== -->
+<!ELEMENT weather_alert (alerts_infos, period)>
+<!ELEMENT alerts_infos (alert_info+)>
+
+<!ELEMENT alert_info (
+    alert_id,
+    generate_at,
+    severity,
+    type,
+    description,
+    affected_areas
+)>
+
+<!ELEMENT alert_id (#PCDATA)>
+<!ELEMENT generate_at (#PCDATA)>
+<!ELEMENT severity (#PCDATA)>
+<!ELEMENT type (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+
+<!ELEMENT affected_areas (affected_area+)>
+<!ELEMENT affected_area (city, lactitude, logintude)>
+
+<!ELEMENT period (start, end)>
+<!ELEMENT start (#PCDATA)>
+<!ELEMENT end (#PCDATA)>
+
+<!-- ========== COMMON ELEMENTS ========== -->
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT lactitude (#PCDATA)>
+<!ATTLIST lactitude cardinal-point CDATA #REQUIRED>
+
+<!ELEMENT logintude (#PCDATA)>
+<!ATTLIST logintude cardinal-point CDATA #REQUIRED>
+
+<!-- * 0 o más veces -->
+<!-- + 1 o más veces -->
+<!-- ? 0 o una vez (optional) -->
