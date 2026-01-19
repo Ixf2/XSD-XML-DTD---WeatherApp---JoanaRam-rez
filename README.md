@@ -91,7 +91,7 @@ The following tools and websites were used during the development of this projec
 
 ## 📄 Author
 
-Student project for XML, DTD, and XSD validation practice.
+@ixf2 project for XML, DTD, and XSD validation practice.
 
 
 
