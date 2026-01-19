@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- <!DOCTYPE weather_alert SYSTEM "information.dtd"> -->
 <weather_alert xmlns="https://www.w3schools.com"
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:schemaLocation="https://www.w3schools.com weather-schema.xsd">
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://www.w3schools.com weather-schema.xsd">
     <alerts_infos>
         <alert_info>
-            <alert_id></alert_id>
-            <generate_at></generate_at>
-            <severity></severity>
-            <type></type>
-            <description></description>
+            <alert_id>ALERT-2026-001</alert_id>
+            <generate_at>2026-01-19T00:00:00</generate_at>
+            <severity>High</severity>
+            <type> Strong Wind</type>
+            <description>
+                Aviso por rachas de viento superiores a 80 km/h que pueden afectar a
+                infraestructuras y al tráfico marítimo.
+            </description>
             <affected_areas>
                 <affected_area>
                     <city>Las Palmas de G.C.</city>
@@ -17,28 +20,29 @@ xsi:schemaLocation="https://www.w3schools.com weather-schema.xsd">
                     <logintude cardinal-point="O">15.43</logintude>
                 </affected_area>
             </affected_areas>
+            <period>
+                <start>2026-01-19T00:00:00</start>
+                <end>2026-01-19T23:00:00</end>
+            </period>
         </alert_info>
         <alert_info>
-            <alert_id></alert_id>
-            <generate_at></generate_at>
-            <severity></severity>
-            <type></type>
-            <description></description>
+            <alert_id>ALERT-2026-001</alert_id>
+            <generate_at>2026-01-19T00:00:00</generate_at>
+            <severity>Moderate</severity>
+            <type> Heavy rain</type>
+            <description>
+                Precipitaciones intensas localizadas que podrían provocar acumulaciones
+                de agua en zonas bajas.
+            </description>
             <affected_areas>
                 <affected_area>
-                    <city>Las Palmas de G.C.</city>
+                    <city>Tenerife</city>
                     <lactitude cardinal-point="N">28.07</lactitude>
-                    <logintude cardinal-point="O">15.43</logintude>
+                    <logintude cardinal-point="O">16.43</logintude>
                 </affected_area>
             </affected_areas>
         </alert_info>
     </alerts_infos>
-
-
-    <period>
-        <start></start>
-        <end></end>
-    </period>
 </weather_alert>
 
 <!-- xmlns="https://www.w3schools.com"
