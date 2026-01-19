@@ -42,22 +42,6 @@ All date and time values follow the **ISO 8601 format**, as required by `xs:date
 
 ---
 
-## ✅ XML Validation Evidence (Screenshots)
-
-The following screenshots demonstrate that the XML files are **well-formed and valid** according to their DTD and XSD definitions:
-
-### Weather Observation XML Validation
-![Weather Observation Validation](screenshots/weather_observation_validation.png)
-
-### Weather Alert XML Validation
-![Weather Alert Validation](screenshots/weather_alert_validation.png)
-
-### XSD Validation
-![XSD Validation](screenshots/xsd_validation.png)
-
-> 📷 Screenshots were obtained using XML validation tools and IDE validators.
-
----
 
 ## 🛠 Tools and Websites Used
 
