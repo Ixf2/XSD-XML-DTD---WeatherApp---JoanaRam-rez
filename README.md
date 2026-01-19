@@ -78,12 +78,6 @@ The following tools and websites were used during the development of this projec
 
 │  weather-schema.xsd
 
-│ weather_observation_validation.png
-
-│ weather_alert_validation.png
-
-│ xsd_validation.png
-
 └── README.md
 
 
