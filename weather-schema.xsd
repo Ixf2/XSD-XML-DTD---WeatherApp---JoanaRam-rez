@@ -1,0 +1,67 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="https://www.w3schools.com"
+    xmlns="https://www.w3schools.com"
+    elementFormDefault="qualified">
+
+    <xs:element name="weather_observation">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="locations">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="location" minOccurs="0" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="city"></xs:element>
+                                        <xs:element name="lactitude"></xs:element>
+                                        <xs:element name="logintude"></xs:element>
+                                        <xs:element ref="observation"></xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:element name="observation">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="date" type="xs:string"></xs:element>
+                <xs:element name="temperature">
+                    <xs:complexType>
+                        <xs:attribute name="unit" type="unitType"></xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="humidity" type="xs:string"></xs:element>
+                <xs:element name="wind_speed">
+                    <xs:complexType>
+                        <xs:attribute name="unit" type="unitSpeed"></xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:simpleType name="unitType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="celsius"></xs:enumeration>
+            <xs:enumeration value="fahrenheit"></xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="unitSpeed">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="km/h"></xs:enumeration>
+            <xs:enumeration value="m/s"></xs:enumeration>
+            <xs:enumeration value="mph"></xs:enumeration>
+            <xs:enumeration value="kt"></xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+
+
+</xs:schema>
